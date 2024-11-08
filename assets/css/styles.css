@@ -1,3 +1,4 @@
+/* Fonte e cores principais */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
@@ -7,8 +8,8 @@ body {
 header {
     background-color: #ccc;
     color: #333;
-    font-family: 'Poppins', sans-serif;
     padding: 20px;
+    text-align: center;
 }
 
 #conteudo {
@@ -20,68 +21,66 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
 }
 
-/* Estilização do menu superior com fundo #333 */
+/* Navbar e Menu */
 .navbar {
-    background-color: #333 !important; /* Cor de fundo do menu */
-    
+    background-color: #333 !important;
+    text-align: center;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: #fff !important; /* Cor dos links no menu */
-    padding: 5px;
+    color: #fff !important;
     font-family: 'Poppins', sans-serif;
-    margin-right: 15px; /* Espaçamento entre os itens do menu */
 }
 
 .navbar .nav-link:hover {
-    color: #fff !important; /* Cor dos links ao passar o mouse */
-    font-family: 'Poppins', sans-serif;
-
+    color: #ffc107 !important;
 }
 
-/* Cor de fundo e bordas arredondadas no botão de Modo Noturno */
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn-primary, .btn-info{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
 #darkModeToggle {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    border: none; /* Remove as bordas */
 }
 
-footer {
-    background-color: #333;
-    color: #f1f1f1;
+/* Responsividade para Navbar */
+@media (max-width: 991px) {
+    .navbar .navbar-brand {
+        margin-right: 0;
+    }
 
-}
+    .navbar-nav {
+        text-align: center;
+    }
 
-footer a {
-    color: #ffc107;
-    text-decoration: none;
+    .navbar-collapse {
+        justify-content: center;
+    }
 
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #ffc107;
-
-}
-.footer a i {
-    font-size: 48px; /* Tamanho dos ícones */
-    margin-right: 5px;
-    margin-top:-10px;
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
     
-
-}
-.footer p {
-    font-size: 18px; /* Tamanho dos ícones */
-    margin-right: 15px;
-    margin-top:10px;
-    
-
-}
-
-
-.btn-primary {
-    border-radius: 10px; /* Bordas arredondadas para o botão de download */
-    font-family: 'Poppins', sans-serif;
+    /* Botões empilhados em telas menores */
+    .navbar-collapse .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* Estilos para o modo noturno */
