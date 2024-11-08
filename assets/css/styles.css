@@ -8,8 +8,19 @@ body {
 header {
     background-color: #ccc;
     color: #333;
-    padding: 20px;
+    padding: 100px 20px; /* Aumenta o padding para dar mais espaço para a imagem */
     text-align: center;
+    background-image: url('../assets/img/gael.jpeg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px; /* Tamanho fixo do mascote */
+}
+
+/* Ajuste para o texto no cabeçalho */
+header h1, header p {
+    position: relative;
+    z-index: 1;
+    color: #333;
 }
 
 #conteudo {
