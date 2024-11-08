@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segurança da Informação - Gael</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+<body>
+
+
+<!-- Menu Superior com Botão de Modo Noturno e Baixar eBook -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand mx-auto" href="#">Logo Gael</a> <!-- Centraliza o título da navbar -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#membros">MEMBROS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contatos">CONTATOS </a></li>
+            <li class="nav-item"><a class="nav-link" href="#saiba-mais">SAIBA MAIS</a></li>
+        </ul>
+    </div>
+    <div>
+        <!-- Botão para Download do eBook no Menu -->
+        <a href="/assets/ebook/seguranca-info.pdf" class="btn btn-primary mr-2" download="seguranca-info.pdf">Baixar eBook</a>
+        <!-- Botão para Verificador de Senha no Menu -->
+        <a href="https://ronnysenna.github.io/verificador-senha/" target="_blank" class="btn btn-info mr-2">Verificador de Senha</a>
+        <!-- Botão de Modo Noturno -->
+        <button id="darkModeToggle" class="btn btn-secondary">Modo Noturno</button>
+    </div>
+</nav>
+
+<!-- Cabeçalho com o mascote Gael -->
+<header class="text-center p-4">
+    <!-- <img src="assets/img/gael.png" alt="Mascote Gael" class="img-fluid" style="max-width: 200px;"> -->
+    <h1>Segurança da Informação para Crianças e Jovens</h1>
+    <p>Aprenda sobre segurança online com o Gael!</p>
+</header>
+
+<!-- Seções com os Tópicos e Imagens Alternadas -->
+<section id="conteudo" class="container mt-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Introdução à Segurança da Informação</h2>
+            <p>O que é segurança da informação e por que ela é importante.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="assets/img/security-intro.png" alt="Introdução à Segurança" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+            <h2>Privacidade Online</h2>
+            <p>Importância de manter as informações pessoais em sigilo e escolher o que compartilhar online.</p>
+        </div>
+        <div class="col-md-6 text-center order-md-1">
+            <img src="assets/img/privacy.png" alt="Privacidade Online" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Senhas Seguras</h2>
+            <p>Como criar senhas fortes e seguras, evitando compartilhar com outras pessoas.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="assets/img/secure-password.png" alt="Senhas Seguras" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+            <h2>Uso Seguro de Redes Sociais</h2>
+            <p>Configurações de privacidade e evitar contatos desconhecidos nas redes sociais.</p>
+        </div>
+        <div class="col-md-6 text-center order-md-1">
+            <img src="assets/img/social-media.png" alt="Uso Seguro de Redes Sociais" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Prevenção Contra Golpes e Phishing</h2>
+            <p>Identificar mensagens suspeitas e como se proteger de fraudes.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="assets/img/phishing-prevention.png" alt="Prevenção Contra Phishing" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6 order-md-2">
+            <h2>Cuidado com Aplicativos e Downloads</h2>
+            <p>Escolher aplicativos seguros e verificar permissões antes de instalar.</p>
+        </div>
+        <div class="col-md-6 text-center order-md-1">
+            <img src="assets/img/app-download.png" alt="Cuidado com Aplicativos e Downloads" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+            <h2>Cyberbullying e Comportamento Online</h2>
+            <p>O que é cyberbullying e a importância de um comportamento respeitoso.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="assets/img/cyberbullying.png" alt="Cyberbullying e Comportamento Online" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer id="contatos" class="footer bg-dark text-white text-center p-3">
+    <p>&copy; 2024 Ideal Rastreamento</p>
+    <p>Siga-nos:</p><br>
+    <p> 
+        <a href="https://facebook.com" target="_blank" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="text-white mr-3"><i class="fab fa-instagram"></i></a> 
+        <a href="https://twitter.com" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+    </p>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
