@@ -17,10 +17,19 @@ header {
 }
 
 /* Ajuste para o texto no cabeçalho */
-header h1, header p {
+header h1{
     position: relative;
     z-index: 1;
-    color: #333;
+    color: #008080;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+header h3{
+    font-family: 'Poppins', sans-serif;
+    color: #000ffff;
 }
 
 #conteudo {
