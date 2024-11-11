@@ -42,11 +42,14 @@ header h3{
     text-align: center;
 }
 
-.navbar-brand{
-border-radius: 10px;
-z--index: -10000 ;
-
+.navbar-brand .logo-img {
+    max-height: 100px !important; /* Ajuste o valor conforme necessário */
+    max-width: 160px !important; /* Ajuste conforme necessário */
+    height: auto;
+    width: auto;
 }
+
+
 .navbar .nav-link {
     color: #fff !important;
     font-family: 'Poppins', sans-serif;
@@ -55,6 +58,7 @@ z--index: -10000 ;
 .navbar .nav-link:hover {
     color: #ffc107 !important;
 }
+
 
 .footer a {
     color: #ffc107;
