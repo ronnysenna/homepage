@@ -13,10 +13,13 @@
       min-height: 100vh;
       background-color: #333;
       color: #fff;
+      margin: 0;
     }
     #animation {
-      width: 650px;
-      height: 550px;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      aspect-ratio: 16 / 9;
       background-size: cover;
       background-position: center;
     }
@@ -30,13 +33,31 @@
       color: #fff;
       border: none;
       border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
       position: absolute;
+    }
+    #continue-btn a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Estilos específicos para dispositivos móveis */
+    @media (max-width: 600px) {
+      #continue-btn {
+        font-size: 18px;
+        padding: 8px 16px;
+        position: absolute;
+      }
+      
     }
   </style>
 </head>
 <body>
   <div id="animation"></div>
-  <button id="continue-btn"><a href="https://ronnysenna.github.io/verificador-senha/" style="color: inherit; text-decoration: none;">Continuar</a></button>
+  <button id="continue-btn">
+    <a href="https://ronnysenna.github.io/verificador-senha/">Continuar</a>
+  </button>
 
   <script>
     const frames = [];
@@ -63,7 +84,7 @@
     }
 
     // Define o intervalo da animação
-    const animationInterval = setInterval(showNextFrame, 850);  // 150 ms para transições mais suaves
+    const animationInterval = setInterval(showNextFrame, 950);
 
     continueButton.addEventListener('click', () => {
       continueButton.style.display = 'none';
