@@ -15,12 +15,12 @@
       color: #fff;
     }
     #animation {
-      width: 300px;
-      height: 300px;
+      width: 550px;
+      height: 350px;
       background-size: cover;
     }
     #continue-btn {
-      margin-top: 20px;
+      margin-top: 3px;
       padding: 10px 20px;
       font-size: 22px;
       display: none; /* Começa oculto */
@@ -38,7 +38,7 @@
 
   <script>
     const frames = [];  // Array para armazenar os caminhos das imagens
-    const frameCount = 19;  // Total de imagens na animação
+    const frameCount = 15;  // Total de imagens na animação
     const animationDiv = document.getElementById('animation');
     const continueButton = document.getElementById('continue-btn');
     let currentFrame = 0;
@@ -68,7 +68,7 @@
     });
 
     // Inicia a animação
-    const animationInterval = setInterval(showNextFrame, 1000);  // Muda o frame a cada 999 ms
+    const animationInterval = setInterval(showNextFrame, 899);  // Muda o frame a cada 999 ms
   </script>
 </body>
 </html>
