@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança da Informação - Gael</title>
+    <title>Segurança Online com Gael</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,29 +12,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-
+    <link rel="icon" type="image/png" href="assets/img/ico.png">
 </head>
 
 <body>
+
 <!-- Menu Superior com Botão de Modo Noturno, Baixar eBook e Verificador de Senha -->
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#"><img src="assets/img/logo50x50.png" class="logo-img"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-            <!-- <li class="nav-item"><a class="nav-link" href="#membros">MEMBROS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contatos">CONTATOS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#saiba-mais">SAIBA MAIS</a></li> -->
-        </ul>
-        <div class="d-flex flex-column flex-lg-row">
-            <!-- Botão para Download do eBook no Menu -->
-            <a href="assets/ebook/seguranca-info.pdf" class="btn btn-primary mb-2 mb-lg-0 mr-lg-2" download="seguranca-info.pdf">Baixar eBook</a>
-            <!-- Botão para Verificador de Senha no Menu -->
-            <a href="https://ronnysenna.github.io/verificador-senha/" target="_blank" class="btn btn-info mb-2 mb-lg-0 mr-lg-2">Verificador de Senha</a>
-            <!-- Botão de Modo Noturno -->
-            <button id="darkModeToggle" class="btn btn-secondary">Modo Noturno</button>
+<nav class="navbar navbar-expand-lg justify-content-center">
+    <div class="container-fluid d-flex flex-column align-items-center">
+        <a class="navbar-brand mx-auto" href="#"><img src="assets/img/logo50x50.png" class="logo-img"></a>
+
+        <!-- Mantendo os botões na navbar -->
+        <div class="navbar-collapse justify-content-center" id="navbarNav">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                <!-- Botão para Download do eBook no Menu -->
+                <a href="assets/ebook/seguranca-info.pdf" class="btn btn-outline-primary btn-custom mb-2 mb-lg-0 mr-lg-2" download="seguranca-info.pdf">
+                    <i class="fas fa-download"></i> Baixar eBook
+                </a>
+                <!-- Botão para Verificador de Senha no Menu -->
+                <a href="https://ronnysenna.github.io/verificador-senha/" target="_blank" class="btn btn-outline-info btn-custom mb-2 mb-lg-0 mr-lg-2">
+                    <i class="fas fa-key"></i> Verificador de Senha
+                </a>
+                <!-- Botão de Modo Noturno -->
+                <button id="darkModeToggle" class="btn btn-outline-secondary btn-custom">
+                    <i class="fas fa-moon"></i> Modo Noturno
+                </button>
+            </div>
         </div>
     </div>
 </nav>
@@ -42,8 +45,8 @@
 
 <!-- Cabeçalho com o mascote Gael -->
 <header class="text-center p-4">
-    <h1>Segurança da Informação para Crianças e Jovens</h1>
-    <h3>Aprenda sobre segurança online com o Gael!</h3>
+    <h1>Segurança Online com Gael</h1>
+    <h3>Aprenda a se proteger na internet!</h3>
 </header>
 
 <!-- Seções com os Tópicos e Imagens Alternadas -->

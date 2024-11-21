@@ -6,9 +6,9 @@ body {
 }
 
 header {
-    background-color: #ccc;
     color: #333;
     text-align: center;
+    margin:50px;
 }
 
 /* Ajuste para o texto no cabeçalho */
@@ -16,7 +16,6 @@ header h1{
     position: relative;
     z-index: 1;
     color: #008080;
-    font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
@@ -36,17 +35,81 @@ header h3{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
 }
 
+
 /* Navbar e Menu */
+
 .navbar {
-    background-color: #333 !important;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.90)), url('/assets/img/fundo-top.jpg') no-repeat center center;
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a navbar */
     text-align: center;
+    padding: 10px 0;
 }
 
+
+/* Logo da Navbar */
 .navbar-brand .logo-img {
-    max-height: 100px !important; /* Ajuste o valor conforme necessário */
-    max-width: 160px !important; /* Ajuste conforme necessário */
+    max-height: 250px !important; /* Ajuste o valor conforme necessário */
+    max-width: 310px !important; /* Ajuste conforme necessário */
     height: auto;
     width: auto;
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+}
+
+/* Links de Navegação */
+.navbar .nav-link {
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px; /* Adiciona um pouco de espaçamento */
+    text-align: center; /* Garante que o texto esteja alinhado no centro */
+    
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important; /* Muda a cor dos links quando passados pelo mouse */
+}
+
+/* Botão Toggler (Modo Mobile) */
+.navbar-toggler {
+    border: none; /* Remove a borda ao redor do botão do menu */
+    background: rgba(255, 255, 255, 0.90); /* Fundo levemente transparente para garantir visibilidade */
+    outline: none; /* Remove a borda padrão quando focado */
+    padding: 8px; /* Adiciona um pouco de espaçamento ao botão */
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+/* Ícone do Toggler */
+.navbar-toggler-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#008080' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); */
+}
+
+/* Ajustes Específicos para Centralização dos Itens do Menu */
+.navbar-collapse {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+/* Botões na Navbar */
+.btn-custom {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.3s;
+    vertical-align: middle; /* Garante que todos os botões fiquem alinhados verticalmente */
+}
+
+.btn-custom:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Container dos Botões */
+.d-flex {
+    align-items: center; /* Garante que todos os elementos dentro do flex fiquem alinhados ao centro verticalmente */
 }
 
 
@@ -59,6 +122,13 @@ header h3{
     color: #ffc107 !important;
 }
 
+.navbar-toggler {
+    border-color: #f1f1f1; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} 
 
 .footer a {
     color: #ffc107;
@@ -73,33 +143,31 @@ header h3{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    
     display: none; 
     z-index: 1000; 
 }
 
-
 #botaoTopo:hover {
     background-color: #555;
 }
-
-
-/* Botões */
-.btn-primary, .btn-info{
+.btn-custom {
+    border-radius: 25px;
+    padding: 10px 20px;
     font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    margin-bottom: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
-#darkModeToggle {
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    border: none; /* Remove as bordas */
+.btn-custom:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
 }
 
 /* Responsividade para Navbar */
 @media (max-width: 991px) {
     .navbar .navbar-brand {
         margin-right: 0;
+        
     }
 
     .navbar-nav {
@@ -112,12 +180,14 @@ header h3{
 
     .navbar-nav .nav-item {
         margin-bottom: 10px;
+        
     }
     
     /* Botões empilhados em telas menores */
     .navbar-collapse .btn {
         width: 100%;
         margin-bottom: 10px;
+        
     }
 }
 
@@ -147,3 +217,7 @@ header h3{
 .dark-mode footer a:hover {
     color: #fff;
 }
+.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
